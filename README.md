@@ -111,6 +111,3 @@ Dəstəyiniz üçün təşəkkürlər!
 Hazırladığım digər Android tətbiqləri ilə buradan tanış ola bilərsiniz:
 [ruhidjavadoff.site/app](https://ruhidjavadoff.site/app)
 
----
-
-Bu README.md faylını proyektinizin kök qovluğuna əlavə edin. GitHub-da çox səliqəli görünəcək!
