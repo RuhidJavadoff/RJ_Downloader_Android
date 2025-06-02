@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">RJ Downloader</string>
+//gelecekde tercume edilecek butun fayillari artir
+    <string name="header_title">RJ Downloader</string>
+
+    <string name="body_hint_paste_link">Video linkini bura yapışdırın...</string>
+    <string name="body_action_find_video">Videonu Tap</string>
+
+    <string name="message_please_enter_link">Zəhmət olmasa, link daxil edin</string>
+    <string name="message_analyzing_link">Link analiz edilir...</string>
+    <string name="message_download_started">"%1$s" yükləməsi başladı</string>
+    <string name="message_download_error">Yükləmə xətası: %1$s</string>
+    <string name="notification_downloading_description">Yüklənir...</string>
+    <string name="title_downloads_page">Yükləmələr</string>
+    <string name="downloads_status_downloading">Yüklənir: %1$s</string> <string name="downloads_status_paused">Dayandırılıb</string>
+    <string name="downloads_status_completed">Tamamlandı</string>
+    <string name="downloads_status_failed">Xəta baş verdi</string>
+    <string name="downloads_status_pending">Gözlənilir...</string>
+    <string name="cd_pause_download">Yükləməni dayandır</string>
+    <string name="cd_resume_download">Yükləməni davam etdir</string>
+    <string name="cd_cancel_download">Yükləməni ləğv et</string>
+    <string name="cd_download_item_thumbnail">Yüklənən elementin şəkli</string>
+    <string name="cd_settings">Ayarlar</string>
+    <string name="footer_nav_downloads">Yükləmələr</string>
+
+    //yeni stringlerim
+
+    <string name="downloads_status_downloading_detailed">Yüklənir: %1$d%% (%2$s / %3$s)</string>
+    <string name="downloads_status_paused_detailed">Dayandırılıb: %1$d%% (%2$s / %3$s)</string>
+
+    <string name="tab_downloading">Yüklənir</string>
+    <string name="tab_completed">Tamamlanıb</string>
+    <string name="tab_failed">Xətalı</string>
+    <string name="label_download_button">Yüklə: %1$s</string>
+    <string name="label_test_video_title">Test Videosu (Nümunə)</string>
+    <string name="footer_download">Yüklə</string>
+    <string name="header_title_download_page">Yüklə</string>
+    <string name="footer_play">İfa/Çal</string>
+    <string name="footer_settings">Ayarlar</string>
+    <string name="tab_search">Axtar</string>
+    <string name="tab_youtube">YouTube</string>
+    <string name="tab_music">Musiqi</string>
+    <string name="tab_other">Digər</string>
+    <string name="body_main_title">RJ Download</string>
+    <string name="search_detail_recent_searches">Son Axtarışlar</string>
+    <string name="search_detail_browse_sites">Saytlara Bax</string>
+    <string name="search_detail_add_site">Sayt Artır</string>
+
+    //yeni stringlerim
+
+    <string name="search_detail_download_options">Yükləmə Seçimləri</string>
+    <string name="media_preview_title_placeholder">Media Başlığı</string>
+    <string name="media_preview_thumbnail_description">Medianın önizləmə şəkli</string>
+    <string name="title_media_preview">Media Detalları</string>
+
+
+    //ayarlar ucun yenu
+    <string name="settings_beta_message">Proqram beta versiyasındadır və gələcəkdə təkmilləşdiriləcəkdir.</string>
+    <string name="settings_button_share_app">Proqramı Paylaş</string>
+    <string name="settings_button_other_apps">Digər Proqramlarım</string>
+    <string name="settings_share_text">Sən də YouTube, Google, TikTok və s. platformalardan video və musiqi yüklə, reklamsız və pulsuz!</string>
+    <string name="settings_app_version">Versiya: %s</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    android:paddingHorizontal="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/shape_edittext_left_rounded"
+    android:backgroundTint="#2C2C2E">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/btnDownloadOption">
+
+        <TextView
+            android:id="@+id/tvFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MP4 Video"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvQuality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="720p - 15MB"
+            android:textColor="@color/rj_gray"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnDownloadOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_download"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:contentDescription="Download"
+        android:tint="@color/rj_purple"/>
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SearchDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnAddSite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etSearchDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_edittext_left_rounded"
+                    android:hint="@string/body_hint_paste_link"
+                    android:inputType="textUri"
+                    android:padding="14dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/rj_gray"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/btnSearchDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button_right_rounded"
+                    android:contentDescription="@string/body_action_find_video"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_download"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tvDownloadOptionsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/search_detail_download_options"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRecentSearches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:layout_height="120dp"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/search_detail_browse_sites"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/iconYoutube"
+                    style="@style/SiteIconStyle"
+                    android:src="@drawable/logo_youtube"
+                    android:contentDescription="YouTube"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <ImageView
+                    android:id="@+id/iconInstagram"
+                    style="@style/SiteIconStyle"
+                    android:src="@drawable/logo_instagram"
+                    android:contentDescription="Instagram"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <ImageView
+                    android:id="@+id/iconFacebook"
+                    style="@style/SiteIconStyle"
+                    android:src="@drawable/logo_facebook"
+                    android:contentDescription="Facebook"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <ImageView
+                    android:id="@+id/iconTiktok"
+                    style="@style/SiteIconStyle"
+                    android:src="@drawable/logo_tiktok"
+                    android:contentDescription="TikTok"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <ImageView
+                    android:id="@+id/iconWhatsapp"
+                    style="@style/SiteIconStyle"
+                    android:src="@drawable/logo_whatsapp"
+                    android:contentDescription="WhatsApp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <ImageView
+                    android:id="@+id/iconX"
+                    style="@style/SiteIconStyle"
+                    android:src="@drawable/logo_x"
+                    android:contentDescription="X"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAddSite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="@string/search_detail_add_site"
+        app:icon="@drawable/ic_add"
+        app:iconGravity="textStart"
+        android:backgroundTint="@color/rj_purple"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.RJDownloaderMusicVideo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/rj_purple</item>
+        <item name="colorPrimaryVariant">@color/rj_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="android:windowBackground">@color/black</item>
+
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.RJDownloaderMusicVideo" parent="Base.Theme.RJDownloaderMusicVideo" />
+    <style name="CustomTabStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="SiteIconStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:padding">12dp</item>
+    </style>
+</resources>
